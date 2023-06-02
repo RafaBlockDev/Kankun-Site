@@ -11,6 +11,7 @@ const Disqus = ({ className }: { className?: string }) => {
   return (
     <div className={className} key={theme}>
       {disqus.enable && (
+        //@ts-ignore
         <DiscussionEmbed
           shortname={disqus.shortname}
           config={disqus.settings}
