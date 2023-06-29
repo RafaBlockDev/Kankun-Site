@@ -1,10 +1,7 @@
-const config = require("./src/config/config.json");
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  basePath: config.base_path !== "/" ? config.base_path : "",
-  trailingSlash: config.site.trailing_slash,
+module.exports = {
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
+  output: "standalone",
 };
-
-module.exports = nextConfig;
